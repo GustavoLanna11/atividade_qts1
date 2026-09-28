@@ -4,7 +4,10 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "pytest>=9.1.1",
+    "pytest-cov>=7.1.0",
+]
 
 [project.scripts]
 atividade-qts1 = "atividade_qts1:main"

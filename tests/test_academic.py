@@ -1,5 +1,5 @@
 import pytest
-from app.academic import AcademicEvaluator
+from src.atividade_qts1.academic import AcademicEvaluator
 
 @pytest.mark.unit
 @pytest.mark.parametrize(
