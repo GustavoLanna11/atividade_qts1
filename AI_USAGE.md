@@ -7,10 +7,11 @@ Este documento descreve de forma transparente o papel das ferramentas de Intelig
 - **Ambiente de Desenvolvimento (IDE):** Visual Studio Code.
 - **Gerenciador de Dependências:** `uv` (Python 3.12+).
 
+
 ## 2. Como a IA foi Empregada
 A Inteligência Artificial (Google Gemini) foi utilizada como suporte técnico nas seguintes etapas:
 - **Especificação de Requisitos (PRD):** Auxílio na estruturação inicial das regras de negócio determinísticas para o sistema de avaliação escolar (cálculo de média ponderada e limites de notas).
-- **Implementação do Domínio (SUT):** Apoio na escrita do código em Python (`app/academic.py`), aplicando boas práticas de tipagem estática (*Type Hints*) e tratamento defensivo de exceções (`ValueError` e `TypeError`).
+- **Implementação do Domínio (SUT):** Apoio na escrita do código em Python, aplicando boas práticas de tipagem estática (*Type Hints*) e tratamento defensivo de exceções (`ValueError` e `TypeError`).
 - **Suíte de Testes Unitários:** Geração orientada de casos de teste parametrizados aplicando técnicas de caixa branca e preta, nomeadamente **Particionamento de Equivalência (EP)**, **Análise do Valor Limite (BVA)** e **Error Guessing**.
 
 ## 3. Auditoria e Validação Humana
