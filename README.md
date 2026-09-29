@@ -48,5 +48,5 @@ uv run pytest --cov=app --cov-branch --cov-report=term-missing
 * `PRD.md`: Especificação dos requisitos e regras de negócio.
 * `AI_USAGE.md`: Relatório de transparência sobre o uso de IA e auditoria.
 * `.cursorrules`: Regras de contexto utilizadas no desenvolvimento assistido por IA.
-* `app/`: Código-fonte principal do domínio (SUT).
+* `src/`: Código-fonte principal do domínio (SUT).
 * `tests/`: Suíte de testes unitários (`@pytest.mark.unit`, parametrização, BVA, EP e Error Guessing).
