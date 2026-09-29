@@ -1,6 +1,8 @@
 import pytest
 from src.atividade_qts1.academic import AcademicEvaluator
 
+
+# ================= Testes parametrizados =====================
 @pytest.mark.unit
 @pytest.mark.parametrize(
     "n1, n2, n3, pesos, esperado",
@@ -11,6 +13,8 @@ from src.atividade_qts1.academic import AcademicEvaluator
         (7.0, 8.0, 9.0, (2.0, 3.0, 5.0), 8.3),
     ]
 )
+
+# ================= Padrão AAA =======================
 def test_calcular_media_ponderada_sucesso(n1, n2, n3, pesos, esperado):
     # Arrange & Act
     resultado = AcademicEvaluator.calcular_media_ponderada(n1, n2, n3, pesos)
@@ -30,6 +34,8 @@ def test_calcular_media_ponderada_sucesso(n1, n2, n3, pesos, esperado):
         (0.0, 0.0, 0.0, "Reprovado"),
     ]
 )
+
+# ================= Análise de Limites ======================
 def test_determinar_status_limites_e_ep(n1, n2, n3, expected_status):
     # Arrange
     media = AcademicEvaluator.calcular_media_ponderada(n1, n2, n3)
@@ -52,6 +58,8 @@ def test_determinar_status_limites_e_ep(n1, n2, n3, expected_status):
         (5.0, 5.0, 10.01),
     ]
 )
+
+# ===================== Error Guessing ==========================
 def test_error_guessing_notas_fora_dos_limites(n1, n2, n3):
     with pytest.raises(ValueError):
         AcademicEvaluator.calcular_media_ponderada(n1, n2, n3)
